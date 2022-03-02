@@ -10,6 +10,7 @@ export const findLongestCharSequence = (word) => {
 
       return
     }
+
     if (currentCharSequence[0] !== char) {
       if (currentCharSequence.length > longestCharSequence.length) {
         longestCharSequence = currentCharSequence
