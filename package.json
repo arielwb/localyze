@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "Ariel Flor coding challenge implementation for Localyze",
   "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
+    "build": "parcel build",
+    "lint": "standard",
+    "start": "parcel",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "lint": "standard"
+    "test:watch": "jest --watch"
   },
   "keywords": [
     "localyze",
@@ -15,18 +18,24 @@
   ],
   "author": "arielwb@gmail.com",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
     "babel-jest": "^27.5.1",
     "jest": "^27.5.1",
+    "parcel": "^2.3.2",
     "standard": "^16.0.4"
   },
   "engines": {
     "node": "^14.5.0"
   },
   "standard": {
-    "envs": ["jest"]
+    "envs": [
+      "jest"
+    ]
   }
 }
