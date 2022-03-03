@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OutputBox should match the snapshot 1`] = `
+<pre>
+  A beautiful output
+</pre>
+`;

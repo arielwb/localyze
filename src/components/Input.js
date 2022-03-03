@@ -9,8 +9,8 @@ export const Input = ({ type, value, label, name, onSubmit, onChange }) => {
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor={name}>{label}</label>
-      <input name={name} type={type} onChange={onChange} value={value} />
-      {onSubmit && <button type='submit'>confirm</button>}
+      <input data-testid='input' name={name} type={type} onChange={onChange} value={value} />
+      {onSubmit && <button type='submit' data-testid='submit-button'>confirm</button>}
     </form>
   )
 }
