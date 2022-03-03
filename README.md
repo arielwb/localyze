@@ -20,7 +20,7 @@ To install the project dependencies, run:
 
 ### Running the app
 
-To view challenge solutions on the browser, run
+To view the challenge solutions on the browser, run:
 
 ```bash
   npm start
@@ -30,7 +30,7 @@ Then open the displayed url on your browser (probably http://localhost:1234)
 
 ### All scripts
 
-There are a few things you can play around in this project
+There are a few things you can play around in this project:
 
 ```bash
   npm run build                 # build the app
