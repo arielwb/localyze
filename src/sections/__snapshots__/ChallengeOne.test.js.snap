@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChallengeOne should match the snapshot 1`] = `
+Array [
+  <h1>
+    Challenge 
+    1
+  </h1>,
+  <p>
+    Given a word, write an algorithm that returns the sequence of a specific character that appears the most in sequence. If there are many sequences like that, return the first longest sequence.
+  </p>,
+  <form
+    onSubmit={[Function]}
+  >
+    <label
+      htmlFor="challenge1"
+    >
+      Ex: Pressuuuuuure
+    </label>
+    <input
+      data-testid="input"
+      name="challenge1"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <button
+      data-testid="submit-button"
+      type="submit"
+    >
+      confirm
+    </button>
+  </form>,
+  <pre />,
+]
+`;

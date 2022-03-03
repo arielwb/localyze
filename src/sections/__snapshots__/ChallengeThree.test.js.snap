@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChallengeThree should match the snapshot 1`] = `
+Array [
+  <h1>
+    Challenge 
+    3
+  </h1>,
+  <p>
+    Given a string \`s\` consists of some words separated by some number of spaces, return the length of the last word in the string. A word is a maximal substring consisting of non-space characters only.
+  </p>,
+  <form
+    onSubmit={[Function]}
+  >
+    <label
+      htmlFor="challenge3"
+    >
+      Ex: Hello World
+    </label>
+    <input
+      data-testid="input"
+      name="challenge3"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <button
+      data-testid="submit-button"
+      type="submit"
+    >
+      confirm
+    </button>
+  </form>,
+  <pre />,
+]
+`;

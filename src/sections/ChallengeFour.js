@@ -1,41 +1,16 @@
 import React, { useState } from 'react'
 import { Header, Input, OutputBox } from '../components'
+import { filterUsersByCountry, sampleUsers } from '../actions/filterUsersByCountry'
 
-const users = [
-  { name: 'Maddy', country: 'Brazil' },
-  { name: 'Nate', country: 'Netherlands' },
-  { name: 'Cassie', country: 'Germany' },
-  { name: 'Fezco', country: 'Norway' },
-  { name: 'Rue', country: 'France' },
-  { name: 'Jules', country: 'France' },
-  { name: 'Elliot', country: 'Poland' },
-  { name: 'Lexi', country: 'Poland' }
-]
-
-const filterUsers = (setState, value) => {
-  if (!value) {
-    setState(users)
-  } else {
-    const filteredCountries = users.filter((user) => {
-      const country = user.country.toLowerCase()
-      const search = value.toLowerCase()
-
-      return country.includes(search)
-    })
-
-    setState(filteredCountries)
-  }
-}
+const buildUserList = (user, index) => (
+  <li key={`${user.name}-${index}`}>
+    <span>{user.name}</span>
+    <span>{user.country}</span>
+  </li>
+)
 
 export const ChallengeFour = () => {
-  const buildUserList = (user, index) => (
-    <li key={`${user.name}-${index}`}>
-      <span>{user.name}</span>
-      <span>{user.country}</span>
-    </li>
-  )
-
-  const [userList, setUsers] = useState(users)
+  const [userList, setUsers] = useState(sampleUsers)
 
   return (
     <>
@@ -48,7 +23,7 @@ export const ChallengeFour = () => {
         type='search'
         name='challenge4'
         label='Filter by country'
-        onChange={(event) => filterUsers(setUsers, event.target.value)}
+        onChange={(event) => filterUsersByCountry(setUsers, event.target.value)}
       />
       <ul className='user-list'>{userList.map(buildUserList)}</ul>
       <OutputBox>

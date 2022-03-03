@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChallengeFive should match the snapshot 1`] = `
+Array [
+  <h1>
+    Challenge 
+    5
+  </h1>,
+  <p>
+    Given two arrays of integers (lengths n and m), find the symmetric difference between them. Items are unique within a single array.
+  </p>,
+  <form
+    onSubmit={[Function]}
+  >
+    <label
+      htmlFor="challenge5"
+    >
+      Type the two arrays separated by a pipe, ex: [1, 2, 3] | [3, 4]
+    </label>
+    <input
+      data-testid="input"
+      name="challenge5"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <button
+      data-testid="submit-button"
+      type="submit"
+    >
+      confirm
+    </button>
+  </form>,
+  <pre />,
+]
+`;

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChallengeTwo should match the snapshot 1`] = `
+Array [
+  <h1>
+    Challenge 
+    2
+  </h1>,
+  <p>
+    Given a set of numbers, find the subset in which the sum of the elements is the maximum sum.
+  </p>,
+  <form
+    onSubmit={[Function]}
+  >
+    <label
+      htmlFor="challenge2"
+    >
+      Ex: [2, -4, 6, 8, -10, 100, -6, 5]
+    </label>
+    <input
+      data-testid="input"
+      name="challenge2"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <button
+      data-testid="submit-button"
+      type="submit"
+    >
+      confirm
+    </button>
+  </form>,
+  <pre />,
+]
+`;
