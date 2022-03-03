@@ -9,9 +9,15 @@ export const ChallengeFive = () => {
 
   const onSubmit = () => {
     const [arr1, arr2] = userInput.split('|')
-    const symmetricDifference = findSymmetricDifference(JSON.parse(arr1), JSON.parse(arr2))
+    if (arr1.length && arr2.length) {
+      try {
+        const symmetricDifference = findSymmetricDifference(JSON.parse(arr1), JSON.parse(arr2))
 
-    setResult(JSON.stringify(symmetricDifference))
+        setResult(JSON.stringify(symmetricDifference))
+      } catch (error) {
+        console.log('Could not convert string to array, please check your input')
+      }
+    }
   }
 
   return (

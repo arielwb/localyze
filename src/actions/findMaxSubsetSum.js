@@ -49,6 +49,7 @@ export const findMaxSubsetSum = (numbers) => {
       }
     } else {
       prevSum = rangeSum
+      endIndex = negativeNumIndex - 1
     }
 
     prevIndex = negativeNumIndex

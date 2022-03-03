@@ -23,7 +23,7 @@ export const ChallengeFour = () => {
         type='search'
         name='challenge4'
         label='Filter by country'
-        onChange={(event) => filterUsersByCountry(setUsers, event.target.value)}
+        onChange={(event) => filterUsersByCountry(setUsers, sampleUsers, event.target.value)}
       />
       <ul className='user-list'>{userList.map(buildUserList)}</ul>
       <OutputBox>
