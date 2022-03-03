@@ -4,7 +4,9 @@ module.exports = {
   collectCoverage: true,
   coverageDirectory: 'coverage',
   coveragePathIgnorePatterns: [
-    '/node_modules/'
+    '/node_modules/',
+    './src/components/index'
   ],
-  coverageProvider: 'v8'
+  coverageProvider: 'v8',
+  testEnvironment: 'jsdom'
 }
