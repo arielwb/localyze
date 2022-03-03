@@ -1,9 +1,9 @@
 import React from 'react'
-import { ChallengeOne } from './challenges/ChallengeOne'
-import { ChallengeTwo } from './challenges/ChallengeTwo'
-import { ChallengeThree } from './challenges/ChallengeThree'
-import { ChallengeFour } from './challenges/ChallengeFour'
-import { ChallengeFive } from './challenges/ChallengeFive'
+import { ChallengeOne } from './sections/ChallengeOne'
+import { ChallengeTwo } from './sections/ChallengeTwo'
+import { ChallengeThree } from './sections/ChallengeThree'
+import { ChallengeFour } from './sections/ChallengeFour'
+import { ChallengeFive } from './sections/ChallengeFive'
 
 export const App = () => {
   return (
